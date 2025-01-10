@@ -1,6 +1,6 @@
 # LinkLounge Frontend
 
-[Try it now!]((https://linklounge-2inr.onrender.com))
+[Try it now!](https://linklounge-2inr.onrender.com)
 
 The frontend for the **LinkLounge** project, built with **React**. This component of the project provides a seamless and visually appealing interface for users to interact with their lounges.
 
