@@ -44,7 +44,7 @@ const PublicLounge = ({ loungeId }) => {
         </h3>
         <p className="text-offblack mb-1">{lounge.description}</p>
         <a
-          href={`https://${import.meta.env.VITE_PROD_URL}}/${lounge.url}`}
+          href={`https://${import.meta.env.VITE_PROD_URL}/${lounge.url}`}
           target="_blank"
           rel="noopener noreferrer"
           className="text-accent underline hover:text-secondary transition-colors duration-200"
