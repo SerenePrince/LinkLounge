@@ -1,5 +1,7 @@
 # LinkLounge Frontend
 
+[Try it now!]((https://linklounge-2inr.onrender.com))
+
 The frontend for the **LinkLounge** project, built with **React**. This component of the project provides a seamless and visually appealing interface for users to interact with their lounges.
 
 ![loungeExample](https://github.com/user-attachments/assets/301f6177-cbf5-4df3-b949-2cd3938c582a)
@@ -93,7 +95,7 @@ A live demo of the project can be accessed at:
 [linklounge.com]((https://linklounge-2inr.onrender.com))
 
 ## Showcase and Contact
-This project serves as a showcase of my frontend development skills. If you have any questions or feedback, feel free to contact me through my [portfolio](https://yourportfolio.com).
+This project serves as a showcase of my frontend development skills. If you have any questions or feedback, feel free to contact me.
 
 ## License
 This project is proprietary and developed solely by me, Noah Park-Nguyen. No part of this project may be reused, modified, or distributed without explicit permission.
