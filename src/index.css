@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-[var(--highlight-color)];
+    @apply text-[var(--offwhite-color)];
+  }
+}
+
+:root {
+  --primary-color: #012840;
+  --secondary-color: #025373;
+  --accent-color: #03738c;
+  --tertiary-color: #3fa8bf;
+  --highlight-color: #96d2d9;
+  --text-color: #f4f9f9;
+  --offblack-color: #1a1a1a;
+  --offwhite-color: #f4f9f9;
+  --lightgrey-color: #e0e6e6;
+  --mediumgrey-color: #b0c4c4;
+  --darkgrey-color: #606d6d;
+  --error-color: #e12a2a;
+}
