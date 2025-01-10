@@ -2,7 +2,7 @@
 
 The frontend for the **LinkLounge** project, built with **React**. This component of the project provides a seamless and visually appealing interface for users to interact with their lounges.
 
-![loungeExample](https://github.com/user-attachments/assets/0b72814c-af95-435b-8f95-6eff89c0e799)
+![loungeExample](https://github.com/user-attachments/assets/301f6177-cbf5-4df3-b949-2cd3938c582a)
 
 ## About the Project
 This project is a personal endeavor developed solely by me, Noah Park-Nguyen. The frontend complements the backend **LinkLounge API** and showcases my skills in designing and developing modern web interfaces.
@@ -47,8 +47,12 @@ Ensure you have the following installed on your system:
    ```
 3. Create a `.env` file in the project root and configure the following variables:
    ```env
-   REACT_APP_API_URL=your-backend-api-url
-   REACT_APP_CLOUDINARY_URL=your-cloudinary-url
+   VITE_NODE_ENV=development
+   VITE_CLOUD_NAME=your-cloudinary-cloud-name
+   VITE_API_KEY=your-cloudinary-api-key
+   VITE_API_SECRET=your-cloudinary-api-secret
+   VITE_CLOUDINARY_URL=your-cloudinary-url
+   VITE_PROD_URL=linklounge-2inr.onrender.com
    ```
 4. Start the development server:
    ```bash
@@ -57,11 +61,20 @@ Ensure you have the following installed on your system:
    The application will be available at `http://localhost:3000`.
 
 ## Folder Structure
-- **src**: Contains all the React components, styles, and utilities.
-  - **components**: Reusable components like buttons, icons, and forms.
-  - **pages**: Main pages like Home, Login, and Dashboard.
-  - **services**: API service functions.
-  - **styles**: Tailwind CSS configurations and global styles.
+```plaintext
+\---src
+    +---app
+    |   \---api
+    +---assets
+    +---components
+    +---config
+    +---features
+    |   +---auth
+    |   +---lounges
+    |   \---users
+    +---hooks
+    \---pages
+```
 
 ## Deployment
 ### To Deploy Locally
@@ -77,7 +90,7 @@ Ensure you have the following installed on your system:
 
 ## Live Demo
 A live demo of the project can be accessed at:
-[(https://linklounge.com)](https://linklounge-2inr.onrender.com)
+[linklounge.com]((https://linklounge-2inr.onrender.com))
 
 ## Showcase and Contact
 This project serves as a showcase of my frontend development skills. If you have any questions or feedback, feel free to contact me through my [portfolio](https://yourportfolio.com).
