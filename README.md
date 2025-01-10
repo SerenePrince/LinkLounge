@@ -1,63 +1,87 @@
----
+# LinkLounge Frontend
 
-# LinkLounge
+The frontend for the **LinkLounge** project, built with **React**. This component of the project provides a seamless and visually appealing interface for users to interact with their lounges.
 
-LinkLounge is a full-stack personal project created by Noah Park-Nguyen. This project took around two months to complete and was developed, designed, and coded entirely by me. It serves as a platform for users to create customizable webpages, similar to Linktree, for hosting social media links, websites, and other content.
+![loungeExample](https://github.com/user-attachments/assets/0b72814c-af95-435b-8f95-6eff89c0e799)
 
-![loungeExample](https://github.com/user-attachments/assets/22ba9968-e8d8-4263-afb9-a2bdff9e3943)
-
-## Technologies Used
-- **React**: For building the user interface and handling the frontend logic.
-- **NodeJS**: For the backend API, handling user authentication, and managing data.
-- **Tailwind CSS**: For styling the website in a responsive and consistent manner.
-- **MongoDB**: For storing user data, lounges, and settings.
+## About the Project
+This project is a personal endeavor developed solely by me, Noah Park-Nguyen. The frontend complements the backend **LinkLounge API** and showcases my skills in designing and developing modern web interfaces.
 
 ## Features
-- **User Authentication**: Create an account and log in to manage your lounges.
-- **Create Custom Lounges**: Design your personal page with custom icons, buttons, background images, and more.
-- **User Settings**: Customize profile information and privacy settings.
-- **Feedback**: Send feedback about the platform to improve the user experience.
-- **Responsive Design**: The website adapts across different devices including phones, tablets, and desktops.
+- **User Authentication**:
+  - Login and sign-up functionality.
+  - Secure session management integrated with the backend API.
+- **Customizable Lounges**:
+  - Create and manage personal lounges with links, images, and social media profiles.
+  - Dynamic drag-and-drop image upload and customization.
+- **Responsive Design**:
+  - Fully responsive layout optimized for phones, tablets, and desktops.
+- **Feedback System**:
+  - Users can provide feedback to help improve the platform.
+- **Themes and Styling**:
+  - Tailored to the **LinkLounge** theme using a custom Tailwind CSS palette.
 
-## Live Demo
-You can try out the live demo of LinkLounge here:  
-[linklounge.com](http://linklounge.com)
+## Technologies Used
+- **React**: For building dynamic and interactive user interfaces.
+- **Tailwind CSS**: For modern, responsive, and consistent styling.
+- **Axios**: For making API requests to the backend.
+- **React Router**: For handling client-side routing.
+- **Cloudinary**: For hosting user-uploaded images.
 
 ## Getting Started
 
-To get started with the project locally, follow these steps:
-
 ### Prerequisites
-Make sure you have the following installed:
-- Node.js (v14 or later)
-- npm (v6 or later)
+Ensure you have the following installed on your system:
+- [Node.js](https://nodejs.org/) (version 14 or later recommended)
+- [npm](https://www.npmjs.com/)
 
 ### Installation
-
-1. Clone this repository:
+1. Clone the repository:
    ```bash
-   git clone https://github.com/sereneprince/linkLounge.git
+   git clone https://github.com/sereneprince/LinkLounge-Frontend.git
+   cd LinkLounge-Frontend
    ```
-
-2. Navigate into the project directory:
-   ```bash
-   cd linkLounge
-   ```
-
-3. Install the dependencies:
+2. Install dependencies:
    ```bash
    npm install
    ```
-
+3. Create a `.env` file in the project root and configure the following variables:
+   ```env
+   REACT_APP_API_URL=your-backend-api-url
+   REACT_APP_CLOUDINARY_URL=your-cloudinary-url
+   ```
 4. Start the development server:
    ```bash
    npm start
    ```
+   The application will be available at `http://localhost:3000`.
 
-The application will now be running at `http://localhost:3000`.
+## Folder Structure
+- **src**: Contains all the React components, styles, and utilities.
+  - **components**: Reusable components like buttons, icons, and forms.
+  - **pages**: Main pages like Home, Login, and Dashboard.
+  - **services**: API service functions.
+  - **styles**: Tailwind CSS configurations and global styles.
+
+## Deployment
+### To Deploy Locally
+- Use tools like [Postman](https://www.postman.com/) or the browser developer console to test interactions with the backend API.
+
+### To Deploy to Production
+1. Build the production-ready frontend:
+   ```bash
+   npm run build
+   ```
+2. Deploy the `build` folder to a hosting service like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
+3. Configure environment variables in the hosting platform.
+
+## Live Demo
+A live demo of the project can be accessed at:
+[(https://linklounge.com)](https://linklounge-2inr.onrender.com)
+
+## Showcase and Contact
+This project serves as a showcase of my frontend development skills. If you have any questions or feedback, feel free to contact me through my [portfolio](https://yourportfolio.com).
 
 ## License
+This project is proprietary and developed solely by me, Noah Park-Nguyen. No part of this project may be reused, modified, or distributed without explicit permission.
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
