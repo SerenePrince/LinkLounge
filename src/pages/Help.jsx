@@ -79,7 +79,8 @@ const Help = () => {
             <p className="text-lg">
               The title generates a unique URL for your lounge, e.g.,
               <code className="bg-lightgrey ml-2 text-accent rounded-md">
-                linklounge.com/<span className="font-bold">username</span>/
+                {import.meta.env.VITE_PROD_URL}/
+                <span className="font-bold">username</span>/
                 <span className="font-bold">title</span>
               </code>
               . Titles are mandatory and must be unique.

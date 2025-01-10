@@ -44,12 +44,12 @@ const PublicLounge = ({ loungeId }) => {
         </h3>
         <p className="text-offblack mb-1">{lounge.description}</p>
         <a
-          href={`https://linklounge.com/${lounge.url}`}
+          href={`https://${import.meta.env.VITE_PROD_URL}}/${lounge.url}`}
           target="_blank"
           rel="noopener noreferrer"
           className="text-accent underline hover:text-secondary transition-colors duration-200"
         >
-          {`linklounge.com/${lounge.url}`}
+          {`linklounge-2inr.onrender.com/${lounge.url}`}
         </a>
         <div className="text-sm text-darkgrey mt-2">
           <p>Created: {created}</p>

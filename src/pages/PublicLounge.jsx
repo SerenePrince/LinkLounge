@@ -23,7 +23,7 @@ const PublicLounge = () => {
   }, [lounge]);
 
   const handleCopy = () => {
-    const url = `linklounge.com/${username}/${title}`;
+    const url = `${import.meta.env.VITE_PROD_URL}/${username}/${title}`;
     navigator.clipboard.writeText(url);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
@@ -102,7 +102,7 @@ const PublicLounge = () => {
         {/* Lounge URL with Copy Button */}
         <div className="text-sm flex items-center justify-center gap-2 mt-3">
           <p className="italic text-textcolor break-words text-center">
-            linklounge.com/{username}/{title}
+            {import.meta.env.VITE_PROD_URL}/{username}/{title}
           </p>
           <button
             className="bg-tertiary border-2 border-textcolor text-textcolor p-1 rounded-md transition-all duration-300 ease-in-out hover:bg-highlight hover:scale-110"
