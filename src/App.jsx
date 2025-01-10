@@ -32,6 +32,7 @@ import ResetPassword from "./features/auth/ResetPassword.jsx";
 
 // Importing roles and configuration
 import { ROLES } from "./config/roles.jsx";
+import NotFound from "./pages/NotFound.jsx";
 
 function App() {
   return (
@@ -84,10 +85,9 @@ function App() {
             </Route>
           </Route>
         </Route>
-
-        {/* Public Lounge Route */}
-        <Route path=":username/:title" element={<PublicLounge />} />
       </Route>
+      <Route path="/:username/:title" element={<PublicLounge />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 }
