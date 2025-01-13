@@ -16,7 +16,7 @@ This is a personal project developed solely by me, **Noah Park-Nguyen**. The fro
 
 ---
 
-## **Features**
+## ✨ **Features**
 
 - **User Authentication**:  
   - Login and sign-up functionality.  
@@ -37,7 +37,7 @@ This is a personal project developed solely by me, **Noah Park-Nguyen**. The fro
 
 ---
 
-## **Technologies Used**
+## 🛠️ **Technologies Used**
 
 - **React**: For building dynamic user interfaces.  
 - **Tailwind CSS**: For responsive and modern styling.  
