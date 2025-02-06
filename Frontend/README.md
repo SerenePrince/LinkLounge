@@ -2,8 +2,6 @@
 
 The frontend for the **LinkLounge** project, built with **React**. This component of the project provides a seamless and visually appealing interface for users to interact with their lounges.
 
-![loungeExample](https://github.com/user-attachments/assets/301f6177-cbf5-4df3-b949-2cd3938c582a)
-
 ## About the Project
 This project is a personal endeavor developed solely by me, Noah Park-Nguyen. The frontend complements the backend **LinkLounge API** and showcases my skills in designing and developing modern web interfaces.
 
