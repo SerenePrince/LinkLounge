@@ -1,93 +1,91 @@
-# LinkLounge
+# 🌐 **LinkLounge – Personalized Link Hub**  
 
-LinkLounge is a full-stack web application that allows users to create customizable lounges for showcasing their social media links, personal websites, and other online profiles. The project consists of a **React frontend** and a **Node.js/Express backend** with a **MongoDB** database.
+🚀 **Live Demo:** [**LinkLounge**](https://linklounge-2inr.onrender.com)  
 
-![linkloungeThumbnail](https://github.com/user-attachments/assets/cf9b5abe-e7b0-424d-bcb9-8aea423e96da)
+LinkLounge is a **full-stack MERN application** that lets users create customizable lounges to showcase their **social media links, websites, and online profiles** in a visually appealing and responsive way.  
 
-## About the Project
-This project is a personal endeavor developed solely by me, **Noah Park-Nguyen**. The goal is to provide users with an easy way to create personalized link hubs with a visually appealing and responsive interface.
+![LinkLounge Thumbnail](https://github.com/user-attachments/assets/cf9b5abe-e7b0-424d-bcb9-8aea423e96da)  
 
-## Features
-### **Frontend**
-- **User Authentication**
-  - Login and sign-up functionality.
-  - Secure session management integrated with the backend API.
-- **Customizable Lounges**
-  - Create and manage personal lounges with links, images, and social media profiles.
-  - Drag-and-drop image upload and customization.
-- **Responsive Design**
-  - Fully optimized for phones, tablets, and desktops.
-- **Feedback System**
-  - Users can provide feedback to help improve the platform.
-- **Themes and Styling**
-  - Custom Tailwind CSS palette for a unique and sleek design.
+---
 
-### **Backend API**
-- **User Management**
-  - Securely store user credentials and profile data.
-  - Authentication using JWT (JSON Web Tokens).
-- **Lounge Management**
-  - Create, update, and delete lounges.
-  - Store and manage links to various social media and websites.
-- **Image Hosting**
-  - Integration with **Cloudinary** for image uploads.
-  - Store Cloudinary URLs in the database for seamless frontend display.
+## 🎯 **About the Project**  
 
-## Technologies Used
-### **Frontend**
-- **React** - Dynamic and interactive UI
-- **Tailwind CSS** - Responsive and modern styling
-- **Axios** - API requests
-- **React Router** - Client-side routing
-- **Cloudinary** - Image storage and management
+Developed solely by **Noah Park-Nguyen**, this project provides users with a **modern, user-friendly link management tool** while also serving as a demonstration of my full-stack development skills.  
 
-### **Backend**
-- **Node.js** - Server-side runtime
-- **Express.js** - Web framework for API development
-- **MongoDB** - NoSQL database for user and lounge storage
-- **Cloudinary** - Media storage for lounge images
-- **JWT Authentication** - Secure user authentication
+---
 
-## Getting Started
-### **Prerequisites**
-Ensure you have the following installed:
-- [Node.js](https://nodejs.org/) (version 14+ recommended)
-- [MongoDB](https://www.mongodb.com/try/download/community)
-- [Cloudinary Account](https://cloudinary.com/)
+## ✨ **Features**  
 
-### **Installation**
-#### **Clone the repository**
+### **Frontend**  
+✅ **User Authentication** – Secure login and sign-up with JWT authentication.  
+✅ **Customizable Lounges** – Drag-and-drop image uploads, editable links, and profiles.  
+✅ **Responsive Design** – Optimized for mobile, tablet, and desktop.  
+✅ **Dark Mode** – Toggle between light and dark themes.  
+✅ **Feedback System** – Users can provide feedback to improve the platform.  
+
+### **Backend API**  
+🔹 **User Management** – Secure storage of credentials and profile data.  
+🔹 **Lounge Management** – CRUD operations for lounges and social links.  
+🔹 **Image Hosting** – Cloudinary integration for seamless media uploads.  
+🔹 **Secure API** – Token-based authentication with Express and MongoDB.  
+
+---
+
+## 🛠️ **Tech Stack**  
+
+### **Frontend**  
+- **React** – Dynamic and interactive UI  
+- **Tailwind CSS** – Responsive and modern styling  
+- **React Router** – Client-side navigation  
+- **Axios** – API requests  
+- **Cloudinary** – Image storage and management  
+
+### **Backend**  
+- **Node.js & Express.js** – REST API development  
+- **MongoDB** – NoSQL database for user and lounge storage  
+- **Cloudinary** – Media storage for lounge images  
+- **JWT Authentication** – Secure authentication  
+
+---
+
+## 🚀 **Getting Started**  
+
+### **Prerequisites**  
+Ensure you have the following installed:  
+- [Node.js](https://nodejs.org/) (14+ recommended)  
+- [MongoDB](https://www.mongodb.com/try/download/community)  
+- [Cloudinary Account](https://cloudinary.com/)  
+
+### **Installation**  
+
+#### **1️⃣ Clone the Repository**  
 ```bash
 git clone https://github.com/sereneprince/LinkLounge.git
 cd LinkLounge
 ```
 
-#### **Setup the Frontend**
+#### **2️⃣ Setup the Frontend**  
 ```bash
 cd frontend
 npm install
 ```
-Create a `.env` file in the `frontend` directory and add the following:
+Create a `.env` file in `frontend/` and add:  
 ```env
-VITE_NODE_ENV=development
-VITE_CLOUD_NAME=your-cloudinary-cloud-name
-VITE_API_KEY=your-cloudinary-api-key
-VITE_API_SECRET=your-cloudinary-api-secret
+VITE_API_BASE_URL=http://localhost:5000
 VITE_CLOUDINARY_URL=your-cloudinary-url
-VITE_PROD_URL=linklounge-2inr.onrender.com
 ```
-Run the frontend:
+Run the frontend:  
 ```bash
 npm start
 ```
-The frontend will be available at `http://localhost:3000`.
+Frontend available at `http://localhost:3000`.  
 
-#### **Setup the Backend**
+#### **3️⃣ Setup the Backend**  
 ```bash
 cd ../backend
 npm install
 ```
-Create a `.env` file in the `backend` directory and add the following:
+Create a `.env` file in `backend/` and add:  
 ```env
 PORT=5000
 MONGO_URI=your-mongodb-connection-string
@@ -96,55 +94,78 @@ CLOUDINARY_API_KEY=your-cloudinary-api-key
 CLOUDINARY_API_SECRET=your-cloudinary-api-secret
 JWT_SECRET=your-jwt-secret
 ```
-Run the backend:
+Run the backend:  
 ```bash
 npm start
 ```
-The API will be available at `http://localhost:5000`.
+API available at `http://localhost:5000`.  
 
-## API Endpoints
-### **Authentication**
-- **POST** `/api/auth/register` - Register a new user.
-- **POST** `/api/auth/login` - Log in an existing user.
+---
 
-### **User Management**
-- **GET** `/api/users/me` - Retrieve logged-in user's information (authentication required).
+## 🔌 **API Endpoints**  
 
-### **Lounge Management**
-- **POST** `/api/lounges` - Create a new lounge.
-- **GET** `/api/lounges` - Retrieve all lounges.
-- **GET** `/api/lounges/:id` - Retrieve a specific lounge by ID.
-- **PUT** `/api/lounges/:id` - Update a lounge by ID.
-- **DELETE** `/api/lounges/:id` - Delete a lounge by ID.
+### **Authentication**  
+🔑 `POST /api/auth/register` – Register a new user  
+🔑 `POST /api/auth/login` – Authenticate and return a token  
 
-### **Image Upload**
-- **POST** `/api/uploads` - Upload an image and get a Cloudinary URL.
+### **User Management**  
+👤 `GET /api/users/me` – Retrieve logged-in user's information  
 
-## Deployment
-### **To Deploy Locally**
-- Use tools like [Postman](https://www.postman.com/) or the browser developer console to test API interactions.
+### **Lounge Management**  
+📌 `POST /api/lounges` – Create a new lounge  
+📌 `GET /api/lounges` – Get all lounges  
+📌 `GET /api/lounges/:id` – Get a lounge by ID  
+📌 `PUT /api/lounges/:id` – Update a lounge  
+📌 `DELETE /api/lounges/:id` – Delete a lounge  
 
-### **To Deploy to Production**
-#### **Frontend**
-1. Build the production-ready frontend:
+### **Image Upload**  
+🖼 `POST /api/uploads` – Upload an image to Cloudinary  
+
+---
+
+## 🌍 **Deployment**  
+
+### **Local Deployment**  
+Use tools like [Postman](https://www.postman.com/) to test API interactions.  
+
+### **Production Deployment**  
+
+#### **Frontend**  
+1. Build the production-ready frontend:  
    ```bash
    npm run build
    ```
-2. Deploy the `build` folder to a hosting service like [Netlify](https://www.netlify.com/) or [Vercel](https://vercel.com/).
-3. Configure environment variables in the hosting platform.
+2. Deploy the `build` folder to **Netlify**, **Vercel**, or similar.  
 
-#### **Backend**
-1. Choose a hosting platform like [Heroku](https://www.heroku.com/) or [AWS](https://aws.amazon.com/).
-2. Set environment variables in the production environment.
-3. Push your code to the production server.
+#### **Backend**  
+1. Choose a hosting platform (**Heroku**, **Render**, **AWS**, etc.).  
+2. Configure environment variables.  
+3. Deploy the server.  
 
-## Live Demo
-A live demo of the project can be accessed at:
-[linklounge.com](https://linklounge-2inr.onrender.com)
+---
 
-## Showcase and Contact
-This project serves as a showcase of my full-stack development skills. If you have any questions or feedback, feel free to contact me through my [portfolio](https://yourportfolio.com).
+## 📌 **Why I Built This**  
 
-## License
+This project is a **showcase of my full-stack skills** while providing a practical tool for users to organize and share their online presence.  
+
+---
+
+## 🎯 **Future Enhancements**  
+
+🚀 **Custom Domains** – Allow users to link personal domains.  
+🚀 **Analytics Dashboard** – Track link clicks and lounge views.  
+🚀 **More Themes** – Expand customization options for lounges.  
+
+---
+
+## 💬 **Feedback & Contact**  
+
+If you have suggestions or questions, feel free to reach out via my **[portfolio](https://yourportfolio.com)**.  
+
+📧 **Email:** noah@example.com  
+
+---
+
+## ⚖️ **License**  
+
 This project is proprietary and developed solely by **Noah Park-Nguyen**. No part of this project may be reused, modified, or distributed without explicit permission.
-
